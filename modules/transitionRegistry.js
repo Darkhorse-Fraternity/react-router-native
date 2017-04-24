@@ -25,7 +25,7 @@ const hasNativeDriver = !!NativeModules.NativeAnimatedModule;
 // FIXME `Animated.setValue` via NativeAnimated for iOS is buggy and causes
 // panResponders to fail.
 // Also See facebook/react-native#9729
-const useNativeDriver = Platform.OS === 'android' ? hasNativeDriver : false;
+const useNativeDriver = Platform.OS === 'android' ? hasNativeDriver : hasNativeDriver;
 
 const defaultTransitionSpec = {
   duration: 250,
@@ -115,6 +115,7 @@ addHandler(
 addHandler(
   HORIZONTAL_PAGER,
   NavigationPagerStyleInterpolator.forHorizontal,
+  NavigationCardStackPanResponder.forHorizontal,
 );
 
 addHandler(

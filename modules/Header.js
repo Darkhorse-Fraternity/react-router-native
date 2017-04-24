@@ -93,11 +93,11 @@ class Header extends Component<DefaultProps, Props, any> {
 
     return (
       <Pop
-        style={[styles.headerLink, leftButtonTextStyle]}
+        style={styles.headerLink}
         underlayColor="transparent"
       >
         <Text
-          style={styles.buttonText}
+          style={[styles.buttonText,leftButtonTextStyle]}
         >
           {leftButtonText}
         </Text>
