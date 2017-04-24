@@ -7,6 +7,7 @@ import {
   TabsRoute,
   Router,
   nativeHistory,
+  IndexRoute
 } from 'react-router-native';
 import {
   component,
@@ -89,6 +90,13 @@ const routes = (
         component={component('#000000')}
         overlayComponent={ProfileHeader}
       >
+
+        <IndexRoute
+         //path="settings"
+          component={component('#FFF0D1')}
+          overlayComponent={stackHeaderComponent('beige')}
+          //transition="horizontal-card-stack"
+        />
         <Route
           path="settings"
           component={component('#FFF0D1')}
