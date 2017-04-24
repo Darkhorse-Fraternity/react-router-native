@@ -42,7 +42,8 @@ const routes = (
   <Router history={nativeHistory} addressBar>
     <TabsRoute path="master" component={Master}>
 
-      <TabsRoute path="/home" component={component('#012B45')} overlayComponent={HomeHeader}>
+      <TabsRoute path="/home" component={component('#012B45')}
+                 overlayComponent={HomeHeader}>
         <TabsRoute
           path="user"
           component={component('#3B2C57')}
