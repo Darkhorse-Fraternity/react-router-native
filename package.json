@@ -87,7 +87,6 @@
     "react": "~15.5.4",
     "react-native": "0.43.4",
     "react-native-mock": "^0.3.1",
-    "react-router": "4.1.1",
     "rimraf": "^2.5.2",
     "run-sequence": "^1.2.2"
   }

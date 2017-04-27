@@ -5,7 +5,7 @@ import React, { Component, PropTypes } from 'react';
 import { Actions } from 'history';
 
 import { createRoutes } from 'react-router';
-import { createRouterObject, assignRouterState } from 'react-router/es/RouterUtils';
+import { createRouterObject, assignRouterState } from './RouterUtils';
 import createTransitionManager from 'react-router/es/createTransitionManager';
 
 import { createNavigationState } from './RouterUtils';
