@@ -341,7 +341,7 @@ export function createPartialState(
     // FIXME move `stateKey` management into `history/nativeHistory`
     const stateKey = location.state ? location.state.stateKey : 0;
 
-    if (parentRoute && parentRoute.routeType === STACK_ROUTE) {
+    if (parentRoute && parentRoute.routeType === STACK_ROUTE && !indexRoute) {
       key = `${key}_${stateKey}`;
     }
 
