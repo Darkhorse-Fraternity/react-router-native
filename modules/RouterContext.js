@@ -24,7 +24,7 @@ type Props = {
   createElement: ElementProvider,
   addressBar: boolean,
 
-  onHardwareBackPress: (router: Object, exit: Function) => boolean,
+  onHardwareBackPress: (router: Object, exit: Function,state:EnhancedNavigationRoute) => boolean,
 
   backwardHistory: Array<Snapshot>,
   forwardHistory: Array<Snapshot>,

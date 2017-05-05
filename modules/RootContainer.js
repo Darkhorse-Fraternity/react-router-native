@@ -57,13 +57,14 @@ class RootContainer extends Component<any, Props, any> {
   handleHardwareBackPress(): boolean {
     const {
       onHardwareBackPress,
+      navigationState
     } = this.props;
 
     const {
       router,
     } = this.context;
 
-    return onHardwareBackPress(router, BackAndroid.exitApp);
+    return onHardwareBackPress(router, BackAndroid.exitApp,navigationState);
   }
 
   context: Context;

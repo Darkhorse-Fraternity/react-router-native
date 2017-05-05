@@ -32,6 +32,8 @@ const useNavState = (createHistory: Function) => (options = {}) => {
       navigationState,
     } = routerState;
 
+
+
     if (!n || n > -1) {
       return false;
     }
